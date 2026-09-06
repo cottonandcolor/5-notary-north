@@ -1,0 +1,61 @@
+$5 NOTARY NORTH — YELP PASTE PACK
+Paste these into https://biz.yelp.com/home/8pAuURqfKQyDp5eURJcVjA
+
+========================================
+1) BUSINESS INFO
+========================================
+Business name: $5 Notary North
+Primary category: Notaries
+Phone: (408) 459-9657
+City / ZIP: San Jose, CA 95134
+Website: (paste your live site URL after deploy)
+Price range: $
+By appointment: Yes
+
+Hours (edit if you want weekends):
+Mon 5:00 PM – 7:00 PM
+Tue 5:00 PM – 7:00 PM
+Wed 5:00 PM – 7:00 PM
+Thu 5:00 PM – 7:00 PM
+Fri 5:00 PM – 7:00 PM
+Sat Closed (or By appointment)
+Sun Closed (or By appointment)
+
+Tip: If you take weekend appointments, set Sat/Sun to the window you actually answer, or put “By appointment” in About.
+
+========================================
+2) ABOUT / FROM THE BUSINESS
+========================================
+Affordable notary in North San Jose (95134). $5 per signature, by appointment only. Meet nearby at Starbucks for quick notarizing — passports, affidavits, permissions, and everyday documents. Responsive, careful with sensitive paperwork. Please bring a valid photo ID and unsigned documents. Cash preferred. Call or text to schedule.
+
+========================================
+3) SHORT TAGLINE (if Yelp shows one)
+========================================
+$5 notarizing in North San Jose — by appointment
+
+========================================
+4) REVIEW REPLIES (customize names if shown)
+========================================
+
+--- Positive: Starbucks / responsive / fair price ---
+Thank you so much! Glad the Starbucks meetup was easy. I keep North San Jose appointments simple — $5 per signature and quick turnaround. Hope you’ll call or text again anytime you need a notary.
+
+--- Positive: sensitive / family documents / care ---
+Thank you for the kind words. Sensitive documents deserve extra care, and I’m glad I could help your family through it. You’re always welcome to reach out for future notarizations in North San Jose.
+
+--- Positive: passport / best price vs $15–$25 ---
+I really appreciate this! Happy I could help with the passport paperwork at a fair $5 rate. Text or call anytime you need another appointment in North San Jose.
+
+--- Positive: quick / cash note ---
+Thank you! Glad it was quick. Tip for future clients: cash is preferred at the appointment. Looking forward to helping again.
+
+--- Negative / “unprofessional” / unreliable (keep calm, short) ---
+I’m sorry your experience didn’t meet expectations. I take appointments in North San Jose seriously and want every signing to feel smooth. If you’re open to it, please call or text me so I can make this right.
+
+========================================
+5) AFTER YOU PASTE
+========================================
+[ ] Upload 10+ photos (you + stamp setup, meetup spot exterior — no private docs)
+[ ] Reply to every existing review
+[ ] Add website URL once the site is live
+[ ] Ask 3 recent happy clients for an honest Yelp review (no discounts for reviews)
