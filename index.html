@@ -43,8 +43,8 @@
         <li>
           <span class="step-num">1</span>
           <div>
-            <h3>Text or call</h3>
-            <p>Share what you need notarized and a time that works.</p>
+            <h3>Request or call</h3>
+            <p>Use the form below, or text/call with what you need and a time that works.</p>
           </div>
         </li>
         <li>
@@ -82,11 +82,41 @@
     </section>
 
     <section class="section book" id="book">
-      <h2>Book your appointment</h2>
-      <p class="section-lede">Evenings <strong>by appointment</strong>. Message with your preferred day and document type.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="tel:+14084599657">Call now</a>
-        <a class="btn ghost" href="sms:+14084599657?body=Hi%20Preeti%2C%20I%27d%20like%20to%20book%20a%20notary%20appointment.%20Preferred%20day%2Ftime%3A%20">Text Notary</a>
+      <h2>Request an appointment</h2>
+      <p class="section-lede">Evenings <strong>by appointment</strong>. Fill this out and we’ll open a text to send your request.</p>
+
+      <form class="request-form" id="appointment-form" novalidate>
+        <label>
+          Your name
+          <input type="text" name="name" id="req-name" autocomplete="name" required placeholder="Full name" />
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" id="req-phone" autocomplete="tel" required placeholder="(408) 555-0123" />
+        </label>
+        <label>
+          Preferred day / time
+          <input type="text" name="when" id="req-when" required placeholder="Tue after 6:30 PM" />
+        </label>
+        <label>
+          Document type
+          <input type="text" name="docs" id="req-docs" required placeholder="Passport, affidavit, permission letter…" />
+        </label>
+        <label>
+          How many signatures?
+          <input type="number" name="signatures" id="req-signatures" min="1" max="50" value="1" required />
+        </label>
+        <label class="full">
+          Notes (optional)
+          <textarea name="notes" id="req-notes" rows="3" placeholder="Anything we should know"></textarea>
+        </label>
+        <button type="submit" class="btn primary full-btn">Send appointment request</button>
+        <p class="form-hint" id="form-hint" hidden></p>
+      </form>
+
+      <div class="cta-row alt-cta">
+        <a class="btn ghost" href="tel:+14084599657">Or call (408) 459-9657</a>
+        <a class="btn ghost" href="sms:+14084599657?body=Hi%2C%20I%27d%20like%20to%20book%20a%20notary%20appointment.%20Preferred%20day%2Ftime%3A%20">Quick text</a>
       </div>
       <p class="fine">$5 Notary North · San Jose, CA 95134 · <strong>By appointment only</strong></p>
     </section>
@@ -99,6 +129,39 @@
 
   <script>
     document.getElementById("year").textContent = String(new Date().getFullYear());
+
+    const NOTARY_SMS = "+14084599657";
+    const form = document.getElementById("appointment-form");
+    const hint = document.getElementById("form-hint");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const name = document.getElementById("req-name").value.trim();
+      const phone = document.getElementById("req-phone").value.trim();
+      const when = document.getElementById("req-when").value.trim();
+      const docs = document.getElementById("req-docs").value.trim();
+      const signatures = document.getElementById("req-signatures").value.trim();
+      const notes = document.getElementById("req-notes").value.trim();
+
+      let message =
+        "Notary appointment request\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Preferred: " + when + "\n" +
+        "Documents: " + docs + "\n" +
+        "Signatures: " + signatures;
+      if (notes) message += "\nNotes: " + notes;
+
+      const smsUrl = "sms:" + NOTARY_SMS + "?body=" + encodeURIComponent(message);
+      window.location.href = smsUrl;
+
+      hint.hidden = false;
+      hint.textContent =
+        "Your messaging app should open with the request. Tap Send. If it doesn’t open, copy this and text (408) 459-9657:\n\n" +
+        message;
+    });
   </script>
 </body>
 </html>
