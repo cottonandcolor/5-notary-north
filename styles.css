@@ -70,13 +70,19 @@ main,
   margin: 0 auto;
 }
 
-.brand {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--ink);
-  text-decoration: none;
-  letter-spacing: -0.02em;
+.brand-note {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.42em;
+  letter-spacing: 0;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.brand .brand-note {
+  font-size: 0.72em;
+  display: inline-block;
+  margin-left: 0.2rem;
 }
 
 .nav {
