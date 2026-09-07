@@ -70,6 +70,15 @@ main,
   margin: 0 auto;
 }
 
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
 .brand-note {
   font-family: var(--font-body);
   font-weight: 500;
